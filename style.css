@@ -158,6 +158,28 @@ ul {
     max-width: 800px;
     position: relative;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatar-container {
+    margin-bottom: 1.5rem;
+}
+
+.avatar {
+    width: 160px;
+    height: 160px;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+    border: 2px solid var(--border-color);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+    border-color: var(--text-secondary);
 }
 
 .hero h1 {
